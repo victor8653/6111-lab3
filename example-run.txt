@@ -1,0 +1,518 @@
+==Frequent itemsets (min_sup=10.00%)
+['day_type_weekday'], 82.8655%
+['Category_Fitness'], 59.4240%
+['attendance_bucket_med_attendance'], 57.2366%
+['Event Type_Community Based Event'], 51.0390%
+['Category_Fitness', 'day_type_weekday'], 50.4922%
+['time_of_day_afternoon_time'], 47.2840%
+['attendance_bucket_med_attendance', 'day_type_weekday'], 46.5913%
+['children_audience_True'], 45.3883%
+['Event Type_Community Based Event', 'day_type_weekday'], 41.1958%
+['Category_Sport'], 40.5760%
+['day_type_weekday', 'time_of_day_afternoon_time'], 39.3000%
+['children_audience_True', 'day_type_weekday'], 38.7167%
+['teens_audience_True'], 34.2326%
+['Category_Fitness', 'attendance_bucket_med_attendance'], 34.2326%
+['adults_audience_True'], 33.7951%
+['Category_Sport', 'day_type_weekday'], 32.3733%
+['time_of_day_morning_time'], 32.3369%
+['Event Type_Community Based Event', 'children_audience_True'], 31.5713%
+['Borough_Bronx'], 30.9151%
+['Category_Fitness', 'adults_audience_True'], 28.6912%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'day_type_weekday'], 28.2173%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance'], 28.1808%
+['Category_Fitness', 'Event Type_Community Based Event'], 27.9621%
+['Category_Sport', 'children_audience_True'], 27.8892%
+['day_type_weekday', 'teens_audience_True'], 27.7798%
+['Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday'], 27.2330%
+['day_type_weekday', 'time_of_day_morning_time'], 27.0142%
+['Borough_Bronx', 'day_type_weekday'], 26.6861%
+['children_audience_True', 'teens_audience_True'], 26.6132%
+['adults_audience_True', 'day_type_weekday'], 26.4309%
+['attendance_bucket_med_attendance', 'time_of_day_afternoon_time'], 26.0664%
+['Category_Fitness', 'time_of_day_afternoon_time'], 25.2643%
+['general_public_audience_True'], 25.1549%
+['Event Type_Community Based Event', 'teens_audience_True'], 24.8633%
+['children_audience_True', 'time_of_day_afternoon_time'], 23.5509%
+['tot_audience_True'], 23.4050%
+['Category_Fitness', 'adults_audience_True', 'day_type_weekday'], 23.2592%
+['attendance_bucket_med_attendance', 'children_audience_True'], 23.2227%
+['Event Type_Community Based Event', 'time_of_day_afternoon_time'], 23.1863%
+['Category_Sport', 'Event Type_Community Based Event'], 23.0769%
+['Category_Sport', 'attendance_bucket_med_attendance'], 23.0040%
+['seniors_audience_True'], 22.8946%
+['Category_Fitness', 'Event Type_Community Based Event', 'day_type_weekday'], 22.8582%
+['Category_Sport', 'children_audience_True', 'day_type_weekday'], 22.8217%
+['Borough_Manhattan'], 22.7124%
+['children_audience_True', 'tot_audience_True'], 22.4572%
+['children_audience_True', 'day_type_weekday', 'teens_audience_True'], 22.3113%
+['adults_audience_True', 'attendance_bucket_med_attendance'], 22.0197%
+['Category_Sport', 'time_of_day_afternoon_time'], 22.0197%
+['Event Type_Community Based Event', 'day_type_weekday', 'teens_audience_True'], 21.5458%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'day_type_weekday'], 21.5093%
+['Category_Fitness', 'day_type_weekday', 'time_of_day_afternoon_time'], 21.4728%
+['attendance_bucket_med_attendance', 'day_type_weekday', 'time_of_day_afternoon_time'], 21.2906%
+['young_adult_audience_True'], 21.1447%
+['Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True'], 20.9624%
+['Borough_Staten Island'], 20.9260%
+['day_type_weekday', 'tot_audience_True'], 20.9260%
+['Borough_Bronx', 'Category_Fitness'], 20.4521%
+['time_of_day_night_time'], 20.3791%
+['attendance_bucket_med_attendance', 'time_of_day_morning_time'], 20.3427%
+['day_type_weekday', 'seniors_audience_True'], 20.2698%
+['children_audience_True', 'day_type_weekday', 'time_of_day_afternoon_time'], 20.1604%
+['children_audience_True', 'day_type_weekday', 'tot_audience_True'], 20.0510%
+['Borough_Staten Island', 'day_type_weekday'], 19.9781%
+['Category_Fitness', 'time_of_day_morning_time'], 19.7229%
+['day_type_weekday', 'general_public_audience_True'], 19.6500%
+['attendance_bucket_med_attendance', 'children_audience_True', 'day_type_weekday'], 19.5771%
+['Category_Fitness', 'seniors_audience_True'], 19.1032%
+['Borough_Bronx', 'Event Type_Community Based Event'], 18.9938%
+['attendance_bucket_low_attendance'], 18.9209%
+['Event Type_Community Based Event', 'day_type_weekday', 'time_of_day_afternoon_time'], 18.8480%
+['Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday', 'teens_audience_True'], 18.4105%
+['Category_Sport', 'attendance_bucket_med_attendance', 'day_type_weekday'], 18.3740%
+['Category_Sport', 'Event Type_Community Based Event', 'day_type_weekday'], 18.3376%
+['Category_Sport', 'Event Type_Community Based Event', 'children_audience_True'], 18.0824%
+['Category_Fitness', 'adults_audience_True', 'attendance_bucket_med_attendance'], 18.0459%
+['attendance_bucket_med_attendance', 'teens_audience_True'], 17.8637%
+['Category_Sport', 'teens_audience_True'], 17.8272%
+['Category_Sport', 'day_type_weekday', 'time_of_day_afternoon_time'], 17.8272%
+['Category_Fitness', 'day_type_weekday', 'seniors_audience_True'], 17.7907%
+['Borough_Bronx', 'Category_Fitness', 'day_type_weekday'], 17.6449%
+['Category_Fitness', 'children_audience_True'], 17.4991%
+['attendance_bucket_low_attendance', 'day_type_weekday'], 17.3533%
+['day_type_weekday', 'young_adult_audience_True'], 17.2439%
+['Category_Fitness', 'day_type_weekday', 'time_of_day_morning_time'], 17.2074%
+['day_type_weekend'], 17.1345%
+['attendance_bucket_med_attendance', 'day_type_weekday', 'time_of_day_morning_time'], 17.1345%
+['teens_audience_True', 'time_of_day_afternoon_time'], 17.0981%
+['Borough_Staten Island', 'Category_Fitness'], 17.0616%
+['Event Type_Community Based Event', 'tot_audience_True'], 17.0616%
+['Borough_Brooklyn'], 16.9158%
+['Event Type_Community Based Event', 'time_of_day_morning_time'], 16.8793%
+['Borough_Staten Island', 'Category_Fitness', 'day_type_weekday'], 16.7700%
+['adults_audience_True', 'attendance_bucket_med_attendance', 'day_type_weekday'], 16.7700%
+['adults_audience_True', 'young_adult_audience_True'], 16.6970%
+['attendance_bucket_unknown_attendance'], 16.6241%
+['Borough_Bronx', 'attendance_bucket_med_attendance'], 16.6241%
+['day_type_weekday', 'time_of_day_night_time'], 16.5512%
+['Event Type_Open House'], 16.4783%
+['Category_Fitness', 'teens_audience_True'], 16.4054%
+['Borough_Brooklyn', 'day_type_weekday'], 16.4054%
+['Category_Sport', 'attendance_bucket_med_attendance', 'children_audience_True'], 16.3689%
+['Event Type_Community Based Event', 'children_audience_True', 'tot_audience_True'], 16.3325%
+['adults_audience_True', 'seniors_audience_True'], 16.0773%
+['Event Type_Community Based Event', 'children_audience_True', 'time_of_day_afternoon_time'], 15.9315%
+['Category_Fitness', 'children_audience_True', 'day_type_weekday'], 15.8950%
+['Category_Fitness', 'general_public_audience_True'], 15.8585%
+['Borough_Manhattan', 'attendance_bucket_med_attendance'], 15.8221%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'children_audience_True'], 15.5669%
+['Borough_Bronx', 'Event Type_Community Based Event', 'day_type_weekday'], 15.5669%
+['attendance_bucket_med_attendance', 'seniors_audience_True'], 15.5304%
+['Category_Sport', 'tot_audience_True'], 15.4940%
+['Event Type_Community Based Event', 'day_type_weekday', 'tot_audience_True'], 15.3846%
+['Event Type_Local Event'], 15.2752%
+['Category_Fitness', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance'], 15.2752%
+['attendance_bucket_unknown_attendance', 'day_type_weekday'], 15.2388%
+['Category_Fitness', 'young_adult_audience_True'], 15.2388%
+['Event Type_Open House', 'day_type_weekday'], 15.1659%
+['Borough_Bronx', 'adults_audience_True'], 15.1294%
+['Borough_Manhattan', 'day_type_weekday'], 15.0930%
+['attendance_bucket_med_attendance', 'general_public_audience_True'], 14.9471%
+['attendance_bucket_med_attendance', 'tot_audience_True'], 14.7649%
+['Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday', 'tot_audience_True'], 14.6555%
+['Category_Sport', 'children_audience_True', 'tot_audience_True'], 14.6190%
+['Borough_Bronx', 'Category_Fitness', 'adults_audience_True'], 14.5826%
+['Category_Sport', 'Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday'], 14.5826%
+['Category_Sport', 'children_audience_True', 'time_of_day_afternoon_time'], 14.5461%
+['Category_Fitness', 'time_of_day_night_time'], 14.4367%
+['attendance_bucket_med_attendance', 'children_audience_True', 'tot_audience_True'], 14.4003%
+['Category_Fitness', 'day_type_weekday', 'teens_audience_True'], 14.3638%
+['Category_Sport', 'children_audience_True', 'teens_audience_True'], 14.2909%
+['Borough_Bronx', 'attendance_bucket_med_attendance', 'day_type_weekday'], 14.2909%
+['Category_Fitness', 'adults_audience_True', 'young_adult_audience_True'], 14.2545%
+['Event Type_Local Event', 'day_type_weekday'], 14.0722%
+['Event Type_Community Based Event', 'adults_audience_True'], 14.0357%
+['attendance_bucket_med_attendance', 'day_type_weekday', 'teens_audience_True'], 14.0357%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'time_of_day_afternoon_time'], 14.0357%
+['Category_Fitness', 'adults_audience_True', 'attendance_bucket_med_attendance', 'day_type_weekday'], 13.9628%
+['attendance_bucket_med_attendance', 'young_adult_audience_True'], 13.9264%
+['Category_Sport', 'day_type_weekday', 'tot_audience_True'], 13.9264%
+['Event Type_Community Based Event', 'day_type_weekday', 'time_of_day_morning_time'], 13.8899%
+['attendance_bucket_med_attendance', 'day_type_weekday', 'seniors_audience_True'], 13.8899%
+['Category_Fitness', 'adults_audience_True', 'seniors_audience_True'], 13.8534%
+['day_type_weekday', 'teens_audience_True', 'time_of_day_afternoon_time'], 13.7076%
+['adults_audience_True', 'day_type_weekday', 'seniors_audience_True'], 13.6712%
+['children_audience_True', 'teens_audience_True', 'time_of_day_afternoon_time'], 13.6712%
+['Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday', 'time_of_day_afternoon_time'], 13.6712%
+['Category_Sport', 'attendance_bucket_med_attendance', 'children_audience_True', 'day_type_weekday'], 13.6347%
+['adults_audience_True', 'day_type_weekday', 'young_adult_audience_True'], 13.5983%
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True'], 13.4889%
+['Category_Sport', 'day_type_weekday', 'teens_audience_True'], 13.4160%
+['teens_audience_True', 'tot_audience_True'], 13.2701%
+['Borough_Bronx', 'time_of_day_afternoon_time'], 13.1972%
+['Category_Fitness', 'Event Type_Open House'], 13.1972%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'seniors_audience_True'], 13.1243%
+['children_audience_True', 'teens_audience_True', 'tot_audience_True'], 13.1243%
+['Category_Sport', 'children_audience_True', 'day_type_weekday', 'tot_audience_True'], 13.1243%
+['Category_Fitness', 'Event Type_Community Based Event', 'teens_audience_True'], 13.0879%
+['adults_audience_True', 'time_of_day_morning_time'], 13.0514%
+['attendance_bucket_med_attendance', 'children_audience_True', 'teens_audience_True'], 13.0514%
+['Category_Fitness', 'day_type_weekday', 'young_adult_audience_True'], 13.0514%
+['attendance_bucket_med_attendance', 'day_type_weekday', 'tot_audience_True'], 12.9785%
+['Borough_Bronx', 'adults_audience_True', 'day_type_weekday'], 12.9420%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'children_audience_True', 'day_type_weekday'], 12.9420%
+['Category_Fitness', 'attendance_bucket_low_attendance'], 12.9056%
+['adults_audience_True', 'time_of_day_afternoon_time'], 12.9056%
+['time_of_day_afternoon_time', 'tot_audience_True'], 12.9056%
+['Category_Sport', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance'], 12.9056%
+['Event Type_Community Based Event', 'teens_audience_True', 'time_of_day_afternoon_time'], 12.7233%
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday'], 12.6504%
+['Category_Sport', 'time_of_day_morning_time'], 12.6139%
+['Category_Fitness', 'day_type_weekday', 'general_public_audience_True'], 12.6139%
+['attendance_bucket_med_attendance', 'children_audience_True', 'day_type_weekday', 'tot_audience_True'], 12.6139%
+['Borough_Manhattan', 'Category_Sport'], 12.5775%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'teens_audience_True'], 12.5775%
+['children_audience_True', 'time_of_day_morning_time'], 12.5410%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'time_of_day_morning_time'], 12.5410%
+['Category_Fitness', 'adults_audience_True', 'day_type_weekday', 'seniors_audience_True'], 12.5410%
+['general_public_audience_True', 'time_of_day_afternoon_time'], 12.5046%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'time_of_day_afternoon_time'], 12.5046%
+['Category_Fitness', 'Event Type_Community Based Event', 'day_type_weekday', 'teens_audience_True'], 12.4681%
+['children_audience_True', 'time_of_day_afternoon_time', 'tot_audience_True'], 12.4316%
+['Borough_Bronx', 'Category_Fitness', 'adults_audience_True', 'day_type_weekday'], 12.3952%
+['Category_Fitness', 'adults_audience_True', 'day_type_weekday', 'young_adult_audience_True'], 12.3952%
+['attendance_bucket_med_attendance', 'children_audience_True', 'time_of_day_afternoon_time'], 12.3587%
+['Category_Fitness', 'children_audience_True', 'teens_audience_True'], 12.3223%
+['Borough_Bronx', 'Category_Fitness', 'attendance_bucket_med_attendance'], 12.2858%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'day_type_weekday', 'seniors_audience_True'], 12.2129%
+['attendance_bucket_med_attendance', 'day_type_weekday', 'general_public_audience_True'], 12.1764%
+['Borough_Manhattan', 'Event Type_Community Based Event'], 12.1400%
+['Category_Sport', 'children_audience_True', 'day_type_weekday', 'time_of_day_afternoon_time'], 12.0671%
+['Category_Sport', 'attendance_bucket_med_attendance', 'time_of_day_afternoon_time'], 12.0306%
+['Category_Fitness', 'Event Type_Community Based Event', 'adults_audience_True'], 11.8848%
+['Category_Fitness', 'Event Type_Community Based Event', 'time_of_day_afternoon_time'], 11.8848%
+['Category_Fitness', 'attendance_bucket_low_attendance', 'day_type_weekday'], 11.8848%
+['Category_Fitness', 'Event Type_Open House', 'day_type_weekday'], 11.8848%
+['Borough_Bronx', 'time_of_day_morning_time'], 11.8119%
+['Category_Fitness', 'day_type_weekday', 'time_of_day_night_time'], 11.8119%
+['Event Type_Agency Produced Event'], 11.7754%
+['Borough_Bronx', 'children_audience_True'], 11.7754%
+['Borough_Staten Island', 'time_of_day_afternoon_time'], 11.7754%
+['Category_Sport', 'Event Type_Community Based Event', 'teens_audience_True'], 11.7754%
+['attendance_bucket_med_attendance', 'day_type_weekday', 'young_adult_audience_True'], 11.6661%
+['day_type_weekday', 'time_of_day_afternoon_time', 'tot_audience_True'], 11.5931%
+['adults_audience_True', 'attendance_bucket_med_attendance', 'young_adult_audience_True'], 11.5567%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'day_type_weekday', 'time_of_day_afternoon_time'], 11.5567%
+['Borough_Bronx', 'day_type_weekday', 'time_of_day_afternoon_time'], 11.4473%
+['Category_Fitness', 'adults_audience_True', 'time_of_day_morning_time'], 11.4109%
+['Category_Fitness', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'day_type_weekday'], 11.4109%
+['children_audience_True', 'day_type_weekday', 'teens_audience_True', 'time_of_day_afternoon_time'], 11.4109%
+['Event Type_Community Based Event', 'teens_audience_True', 'tot_audience_True'], 11.3744%
+['day_type_weekday', 'teens_audience_True', 'tot_audience_True'], 11.3744%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'general_public_audience_True'], 11.3015%
+['Category_Sport', 'Event Type_Community Based Event', 'time_of_day_afternoon_time'], 11.3015%
+['children_audience_True', 'day_type_weekday', 'teens_audience_True', 'tot_audience_True'], 11.3015%
+['Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True', 'tot_audience_True'], 11.3015%
+['Event Type_Community Based Event', 'attendance_bucket_low_attendance'], 11.2650%
+['Borough_Staten Island', 'day_type_weekday', 'time_of_day_afternoon_time'], 11.2286%
+['Event Type_Local Event', 'attendance_bucket_med_attendance'], 11.1921%
+['Category_Sport', 'children_audience_True', 'day_type_weekday', 'teens_audience_True'], 11.1921%
+['children_audience_True', 'day_type_weekday', 'time_of_day_afternoon_time', 'tot_audience_True'], 11.1557%
+['adults_audience_True', 'attendance_bucket_med_attendance', 'seniors_audience_True'], 11.1192%
+['Category_Fitness', 'children_audience_True', 'day_type_weekday', 'teens_audience_True'], 11.1192%
+['Borough_Bronx', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance'], 11.0463%
+['Category_Sport', 'attendance_bucket_med_attendance', 'tot_audience_True'], 11.0463%
+['Event Type_Community Based Event', 'time_of_day_night_time'], 10.9734%
+['Event Type_Community Based Event', 'day_type_weekday', 'teens_audience_True', 'time_of_day_afternoon_time'], 10.9734%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'day_type_weekday', 'time_of_day_morning_time'], 10.9369%
+['Borough_Bronx', 'Category_Fitness', 'Event Type_Community Based Event'], 10.8640%
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True'], 10.8640%
+['Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True', 'time_of_day_afternoon_time'], 10.8640%
+['attendance_bucket_med_attendance', 'time_of_day_night_time'], 10.8276%
+['Borough_Bronx', 'young_adult_audience_True'], 10.8276%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'time_of_day_morning_time'], 10.8276%
+['adults_audience_True', 'day_type_weekday', 'time_of_day_morning_time'], 10.7546%
+['Category_Sport', 'attendance_bucket_med_attendance', 'children_audience_True', 'tot_audience_True'], 10.7546%
+['Borough_Staten Island', 'Event Type_Community Based Event'], 10.7182%
+['Borough_Bronx', 'day_type_weekday', 'time_of_day_morning_time'], 10.7182%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'children_audience_True', 'teens_audience_True'], 10.7182%
+['attendance_bucket_med_attendance', 'day_type_weekend'], 10.6453%
+['Borough_Manhattan', 'children_audience_True'], 10.6453%
+['attendance_bucket_med_attendance', 'children_audience_True', 'day_type_weekday', 'teens_audience_True'], 10.6453%
+['seniors_audience_True', 'time_of_day_morning_time'], 10.6088%
+['Borough_Brooklyn', 'attendance_bucket_med_attendance'], 10.6088%
+['Category_Fitness', 'adults_audience_True', 'time_of_day_afternoon_time'], 10.6088%
+['Borough_Brooklyn', 'Event Type_Local Event'], 10.5724%
+['Borough_Brooklyn', 'Event Type_Local Event', 'day_type_weekday'], 10.5724%
+['Borough_Bronx', 'children_audience_True', 'day_type_weekday'], 10.5724%
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'day_type_weekday', 'teens_audience_True'], 10.5724%
+['attendance_bucket_med_attendance', 'children_audience_True', 'day_type_weekday', 'time_of_day_afternoon_time'], 10.5359%
+['Borough_Bronx', 'seniors_audience_True'], 10.4995%
+['Borough_Bronx', 'Category_Sport'], 10.4630%
+['Event Type_Community Based Event', 'adults_audience_True', 'attendance_bucket_med_attendance'], 10.4630%
+['Borough_Staten Island', 'Category_Fitness', 'Event Type_Community Based Event'], 10.4265%
+['Category_Fitness', 'attendance_bucket_med_attendance', 'young_adult_audience_True'], 10.4265%
+['Borough_Bronx', 'Category_Fitness', 'attendance_bucket_med_attendance', 'day_type_weekday'], 10.4265%
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday', 'teens_audience_True'], 10.4265%
+['Borough_Bronx', 'day_type_weekday', 'seniors_audience_True'], 10.3536%
+['Category_Sport', 'attendance_bucket_med_attendance', 'teens_audience_True'], 10.3536%
+['Event Type_Local Event', 'attendance_bucket_med_attendance', 'day_type_weekday'], 10.3536%
+['Borough_Brooklyn', 'attendance_bucket_med_attendance', 'day_type_weekday'], 10.3172%
+['Category_Sport', 'Event Type_Community Based Event', 'tot_audience_True'], 10.2807%
+['Event Type_Community Based Event', 'general_public_audience_True'], 10.2078%
+['Borough_Manhattan', 'teens_audience_True'], 10.2078%
+['Borough_Staten Island', 'Event Type_Community Based Event', 'day_type_weekday'], 10.2078%
+['Borough_Manhattan', 'attendance_bucket_med_attendance', 'day_type_weekday'], 10.2078%
+['children_audience_True', 'day_type_weekday', 'time_of_day_morning_time'], 10.2078%
+['Event Type_Community Based Event', 'day_type_weekday', 'teens_audience_True', 'tot_audience_True'], 10.2078%
+['Category_Sport', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'children_audience_True'], 10.1713%
+['Borough_Manhattan', 'Category_Fitness'], 10.1349%
+['Event Type_Community Based Event', 'adults_audience_True', 'day_type_weekday'], 10.1349%
+['Borough_Bronx', 'day_type_weekday', 'young_adult_audience_True'], 10.1349%
+['Borough_Staten Island', 'Category_Fitness', 'Event Type_Community Based Event', 'day_type_weekday'], 10.1349%
+['Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday', 'teens_audience_True', 'tot_audience_True'], 10.1349%
+['teens_audience_True', 'time_of_day_morning_time'], 10.0984%
+['Category_Sport', 'Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True'], 10.0984%
+['Category_Sport', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'day_type_weekday'], 10.0984%
+['Borough_Bronx', 'adults_audience_True', 'attendance_bucket_med_attendance'], 10.0620%
+['Event Type_Community Based Event', 'attendance_bucket_low_attendance', 'day_type_weekday'], 10.0620%
+
+==High-confidence association rules (min_conf=70.00%)
+['Borough_Brooklyn', 'Event Type_Local Event'] => ['day_type_weekday'] (Conf: 100.0%, Supp: 10.5724%)
+['day_type_weekday', 'teens_audience_True', 'tot_audience_True'] => ['children_audience_True'] (Conf: 99.4%, Supp: 11.3015%)
+['Event Type_Community Based Event', 'teens_audience_True', 'tot_audience_True'] => ['children_audience_True'] (Conf: 99.4%, Supp: 11.3015%)
+['Borough_Staten Island', 'Event Type_Community Based Event', 'day_type_weekday'] => ['Category_Fitness'] (Conf: 99.3%, Supp: 10.1349%)
+['Event Type_Community Based Event', 'day_type_weekday', 'teens_audience_True', 'tot_audience_True'] => ['children_audience_True'] (Conf: 99.3%, Supp: 10.1349%)
+['teens_audience_True', 'tot_audience_True'] => ['children_audience_True'] (Conf: 98.9%, Supp: 13.1243%)
+['Borough_Bronx', 'seniors_audience_True'] => ['day_type_weekday'] (Conf: 98.6%, Supp: 10.3536%)
+['Borough_Staten Island', 'Category_Fitness'] => ['day_type_weekday'] (Conf: 98.3%, Supp: 16.7700%)
+['attendance_bucket_med_attendance', 'tot_audience_True'] => ['children_audience_True'] (Conf: 97.5%, Supp: 14.4003%)
+['Category_Sport', 'attendance_bucket_med_attendance', 'tot_audience_True'] => ['children_audience_True'] (Conf: 97.4%, Supp: 10.7546%)
+['Borough_Staten Island', 'Event Type_Community Based Event'] => ['Category_Fitness'] (Conf: 97.3%, Supp: 10.4265%)
+['Borough_Brooklyn', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 97.3%, Supp: 10.3172%)
+['Borough_Staten Island', 'Category_Fitness', 'Event Type_Community Based Event'] => ['day_type_weekday'] (Conf: 97.2%, Supp: 10.1349%)
+['attendance_bucket_med_attendance', 'day_type_weekday', 'tot_audience_True'] => ['children_audience_True'] (Conf: 97.2%, Supp: 12.6139%)
+['Borough_Brooklyn'] => ['day_type_weekday'] (Conf: 97.0%, Supp: 16.4054%)
+['Borough_Bronx', 'adults_audience_True'] => ['Category_Fitness'] (Conf: 96.4%, Supp: 14.5826%)
+['time_of_day_afternoon_time', 'tot_audience_True'] => ['children_audience_True'] (Conf: 96.3%, Supp: 12.4316%)
+['day_type_weekday', 'time_of_day_afternoon_time', 'tot_audience_True'] => ['children_audience_True'] (Conf: 96.2%, Supp: 11.1557%)
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 96.0%, Supp: 10.4265%)
+['tot_audience_True'] => ['children_audience_True'] (Conf: 96.0%, Supp: 22.4572%)
+['day_type_weekday', 'tot_audience_True'] => ['children_audience_True'] (Conf: 95.8%, Supp: 20.0510%)
+['Borough_Bronx', 'adults_audience_True', 'day_type_weekday'] => ['Category_Fitness'] (Conf: 95.8%, Supp: 12.3952%)
+['Event Type_Community Based Event', 'tot_audience_True'] => ['children_audience_True'] (Conf: 95.7%, Supp: 16.3325%)
+['Borough_Staten Island'] => ['day_type_weekday'] (Conf: 95.5%, Supp: 19.9781%)
+['Borough_Staten Island', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 95.4%, Supp: 11.2286%)
+['Category_Fitness', 'Event Type_Community Based Event', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 95.3%, Supp: 12.4681%)
+['Event Type_Community Based Event', 'day_type_weekday', 'tot_audience_True'] => ['children_audience_True'] (Conf: 95.3%, Supp: 14.6555%)
+['Borough_Staten Island', 'Event Type_Community Based Event'] => ['day_type_weekday'] (Conf: 95.2%, Supp: 10.2078%)
+['Category_Fitness', 'day_type_weekday', 'young_adult_audience_True'] => ['adults_audience_True'] (Conf: 95.0%, Supp: 12.3952%)
+['Category_Sport', 'tot_audience_True'] => ['children_audience_True'] (Conf: 94.4%, Supp: 14.6190%)
+['Category_Sport', 'day_type_weekday', 'tot_audience_True'] => ['children_audience_True'] (Conf: 94.2%, Supp: 13.1243%)
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True'] => ['day_type_weekday'] (Conf: 93.8%, Supp: 12.6504%)
+['Category_Fitness', 'children_audience_True', 'day_type_weekday', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 93.8%, Supp: 10.4265%)
+['Borough_Bronx', 'young_adult_audience_True'] => ['day_type_weekday'] (Conf: 93.6%, Supp: 10.1349%)
+['Category_Fitness', 'young_adult_audience_True'] => ['adults_audience_True'] (Conf: 93.5%, Supp: 14.2545%)
+['Category_Fitness', 'seniors_audience_True'] => ['day_type_weekday'] (Conf: 93.1%, Supp: 17.7907%)
+['Category_Fitness', 'attendance_bucket_med_attendance', 'seniors_audience_True'] => ['day_type_weekday'] (Conf: 93.1%, Supp: 12.2129%)
+['Event Type_Local Event', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 92.5%, Supp: 10.3536%)
+['Event Type_Local Event'] => ['day_type_weekday'] (Conf: 92.1%, Supp: 14.0722%)
+['Category_Fitness', 'attendance_bucket_low_attendance'] => ['day_type_weekday'] (Conf: 92.1%, Supp: 11.8848%)
+['Event Type_Open House'] => ['day_type_weekday'] (Conf: 92.0%, Supp: 15.1659%)
+['adults_audience_True', 'day_type_weekday', 'seniors_audience_True'] => ['Category_Fitness'] (Conf: 91.7%, Supp: 12.5410%)
+['attendance_bucket_low_attendance'] => ['day_type_weekday'] (Conf: 91.7%, Supp: 17.3533%)
+['attendance_bucket_unknown_attendance'] => ['day_type_weekday'] (Conf: 91.7%, Supp: 15.2388%)
+['adults_audience_True', 'day_type_weekday', 'young_adult_audience_True'] => ['Category_Fitness'] (Conf: 91.2%, Supp: 12.3952%)
+['Category_Fitness', 'children_audience_True'] => ['day_type_weekday'] (Conf: 90.8%, Supp: 15.8950%)
+['Borough_Bronx', 'time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 90.7%, Supp: 10.7182%)
+['Category_Fitness', 'adults_audience_True', 'seniors_audience_True'] => ['day_type_weekday'] (Conf: 90.5%, Supp: 12.5410%)
+['Category_Fitness', 'children_audience_True', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 90.2%, Supp: 11.1192%)
+['Event Type_Community Based Event', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 90.2%, Supp: 15.3846%)
+['Category_Fitness', 'Event Type_Open House'] => ['day_type_weekday'] (Conf: 90.1%, Supp: 11.8848%)
+['Category_Sport', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.9%, Supp: 13.9264%)
+['time_of_day_afternoon_time', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.8%, Supp: 11.5931%)
+['Borough_Bronx', 'children_audience_True'] => ['day_type_weekday'] (Conf: 89.8%, Supp: 10.5724%)
+['Category_Sport', 'children_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.8%, Supp: 13.1243%)
+['day_type_weekday', 'teens_audience_True', 'tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 89.7%, Supp: 10.2078%)
+['Event Type_Community Based Event', 'teens_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.7%, Supp: 10.2078%)
+['children_audience_True', 'time_of_day_afternoon_time', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.7%, Supp: 11.1557%)
+['Event Type_Community Based Event', 'children_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.7%, Supp: 14.6555%)
+['children_audience_True', 'day_type_weekday', 'teens_audience_True', 'tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 89.7%, Supp: 10.1349%)
+['Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.7%, Supp: 10.1349%)
+['attendance_bucket_med_attendance', 'seniors_audience_True'] => ['day_type_weekday'] (Conf: 89.4%, Supp: 13.8899%)
+['tot_audience_True'] => ['day_type_weekday'] (Conf: 89.4%, Supp: 20.9260%)
+['Event Type_Community Based Event', 'attendance_bucket_low_attendance'] => ['day_type_weekday'] (Conf: 89.3%, Supp: 10.0620%)
+['children_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 89.3%, Supp: 20.0510%)
+['seniors_audience_True'] => ['day_type_weekday'] (Conf: 88.5%, Supp: 20.2698%)
+['Category_Fitness', 'children_audience_True', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 88.2%, Supp: 10.8640%)
+['adults_audience_True', 'day_type_weekday'] => ['Category_Fitness'] (Conf: 88.0%, Supp: 23.2592%)
+['attendance_bucket_med_attendance', 'day_type_weekday', 'seniors_audience_True'] => ['Category_Fitness'] (Conf: 87.9%, Supp: 12.2129%)
+['attendance_bucket_med_attendance', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 87.9%, Supp: 12.9785%)
+['Event Type_Community Based Event', 'children_audience_True', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 87.8%, Supp: 18.4105%)
+['day_type_weekday', 'seniors_audience_True'] => ['Category_Fitness'] (Conf: 87.8%, Supp: 17.7907%)
+['attendance_bucket_med_attendance', 'children_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 87.6%, Supp: 12.6139%)
+['Category_Fitness', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 87.6%, Supp: 14.3638%)
+['adults_audience_True', 'time_of_day_morning_time'] => ['Category_Fitness'] (Conf: 87.4%, Supp: 11.4109%)
+['Category_Fitness', 'time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 87.2%, Supp: 17.2074%)
+['Category_Fitness', 'attendance_bucket_med_attendance', 'time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 87.2%, Supp: 10.9369%)
+['Category_Fitness', 'adults_audience_True', 'young_adult_audience_True'] => ['day_type_weekday'] (Conf: 87.0%, Supp: 12.3952%)
+['Category_Fitness', 'day_type_weekday', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 86.8%, Supp: 12.4681%)
+['Borough_Bronx', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 86.7%, Supp: 11.4473%)
+['Event Type_Community Based Event', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 86.7%, Supp: 21.5458%)
+['Borough_Bronx'] => ['day_type_weekday'] (Conf: 86.3%, Supp: 26.6861%)
+['Borough_Bronx', 'Category_Fitness'] => ['day_type_weekday'] (Conf: 86.3%, Supp: 17.6449%)
+['Event Type_Community Based Event', 'children_audience_True'] => ['day_type_weekday'] (Conf: 86.3%, Supp: 27.2330%)
+['Event Type_Community Based Event', 'teens_audience_True', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 86.2%, Supp: 10.9734%)
+['adults_audience_True', 'seniors_audience_True'] => ['Category_Fitness'] (Conf: 86.2%, Supp: 13.8534%)
+['children_audience_True', 'teens_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 86.1%, Supp: 11.3015%)
+['children_audience_True', 'teens_audience_True', 'tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 86.1%, Supp: 11.3015%)
+['Borough_Bronx', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 86.0%, Supp: 14.2909%)
+['Event Type_Community Based Event', 'children_audience_True', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 85.8%, Supp: 13.6712%)
+['Category_Sport', 'Event Type_Community Based Event', 'teens_audience_True'] => ['children_audience_True'] (Conf: 85.8%, Supp: 10.0984%)
+['teens_audience_True', 'tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 85.7%, Supp: 11.3744%)
+['teens_audience_True', 'tot_audience_True'] => ['day_type_weekday'] (Conf: 85.7%, Supp: 11.3744%)
+['Category_Fitness', 'young_adult_audience_True'] => ['day_type_weekday'] (Conf: 85.6%, Supp: 13.0514%)
+['children_audience_True', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 85.6%, Supp: 20.1604%)
+['Borough_Bronx', 'adults_audience_True'] => ['day_type_weekday'] (Conf: 85.5%, Supp: 12.9420%)
+['Event Type_Community Based Event', 'day_type_weekday', 'teens_audience_True'] => ['children_audience_True'] (Conf: 85.4%, Supp: 18.4105%)
+['Event Type_Community Based Event', 'teens_audience_True', 'time_of_day_afternoon_time'] => ['children_audience_True'] (Conf: 85.4%, Supp: 10.8640%)
+['adults_audience_True', 'young_adult_audience_True'] => ['Category_Fitness'] (Conf: 85.4%, Supp: 14.2545%)
+['children_audience_True'] => ['day_type_weekday'] (Conf: 85.3%, Supp: 38.7167%)
+['attendance_bucket_med_attendance', 'children_audience_True', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 85.3%, Supp: 10.5359%)
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'teens_audience_True'] => ['children_audience_True'] (Conf: 85.2%, Supp: 10.7182%)
+['adults_audience_True', 'seniors_audience_True'] => ['day_type_weekday'] (Conf: 85.0%, Supp: 13.6712%)
+['Borough_Bronx', 'Category_Fitness', 'adults_audience_True'] => ['day_type_weekday'] (Conf: 85.0%, Supp: 12.3952%)
+['Category_Fitness', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 85.0%, Supp: 21.4728%)
+['Category_Fitness'] => ['day_type_weekday'] (Conf: 85.0%, Supp: 50.4922%)
+['adults_audience_True'] => ['Category_Fitness'] (Conf: 84.9%, Supp: 28.6912%)
+['Borough_Bronx', 'Category_Fitness', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 84.9%, Supp: 10.4265%)
+['Event Type_Community Based Event', 'adults_audience_True'] => ['Category_Fitness'] (Conf: 84.7%, Supp: 11.8848%)
+['attendance_bucket_med_attendance', 'seniors_audience_True'] => ['Category_Fitness'] (Conf: 84.5%, Supp: 13.1243%)
+['Event Type_Community Based Event', 'teens_audience_True'] => ['children_audience_True'] (Conf: 84.3%, Supp: 20.9624%)
+['attendance_bucket_med_attendance', 'children_audience_True'] => ['day_type_weekday'] (Conf: 84.3%, Supp: 19.5771%)
+['attendance_bucket_med_attendance', 'time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 84.2%, Supp: 17.1345%)
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 84.1%, Supp: 10.5724%)
+['Borough_Staten Island', 'day_type_weekday'] => ['Category_Fitness'] (Conf: 83.9%, Supp: 16.7700%)
+['children_audience_True', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 83.8%, Supp: 22.3113%)
+['attendance_bucket_med_attendance', 'young_adult_audience_True'] => ['day_type_weekday'] (Conf: 83.8%, Supp: 11.6661%)
+['Category_Fitness', 'Event Type_Community Based Event', 'day_type_weekday', 'teens_audience_True'] => ['children_audience_True'] (Conf: 83.6%, Supp: 10.4265%)
+['time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 83.5%, Supp: 27.0142%)
+['children_audience_True', 'teens_audience_True', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 83.5%, Supp: 11.4109%)
+['seniors_audience_True'] => ['Category_Fitness'] (Conf: 83.4%, Supp: 19.1032%)
+['Category_Sport', 'day_type_weekday', 'teens_audience_True'] => ['children_audience_True'] (Conf: 83.4%, Supp: 11.1921%)
+['Category_Sport', 'attendance_bucket_med_attendance', 'children_audience_True'] => ['day_type_weekday'] (Conf: 83.3%, Supp: 13.6347%)
+['adults_audience_True', 'attendance_bucket_med_attendance', 'day_type_weekday'] => ['Category_Fitness'] (Conf: 83.3%, Supp: 13.9628%)
+['day_type_weekday', 'teens_audience_True', 'time_of_day_afternoon_time'] => ['children_audience_True'] (Conf: 83.2%, Supp: 11.4109%)
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance', 'children_audience_True'] => ['day_type_weekday'] (Conf: 83.1%, Supp: 12.9420%)
+['time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 83.1%, Supp: 39.3000%)
+['Category_Fitness', 'Event Type_Community Based Event', 'teens_audience_True'] => ['children_audience_True'] (Conf: 83.0%, Supp: 10.8640%)
+['attendance_bucket_med_attendance', 'young_adult_audience_True'] => ['adults_audience_True'] (Conf: 83.0%, Supp: 11.5567%)
+['Category_Sport', 'children_audience_True', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 83.0%, Supp: 12.0671%)
+['children_audience_True', 'day_type_weekday', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 82.5%, Supp: 18.4105%)
+['Category_Fitness', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 82.4%, Supp: 28.2173%)
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True', 'day_type_weekday'] => ['teens_audience_True'] (Conf: 82.4%, Supp: 10.4265%)
+['adults_audience_True', 'time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 82.4%, Supp: 10.7546%)
+['Category_Fitness', 'attendance_bucket_med_attendance', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 82.3%, Supp: 11.5567%)
+['Event Type_Community Based Event', 'time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 82.3%, Supp: 13.8899%)
+['adults_audience_True', 'time_of_day_afternoon_time'] => ['Category_Fitness'] (Conf: 82.2%, Supp: 10.6088%)
+['attendance_bucket_med_attendance', 'children_audience_True', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 82.1%, Supp: 10.7182%)
+['Borough_Bronx', 'Event Type_Community Based Event'] => ['day_type_weekday'] (Conf: 82.0%, Supp: 15.5669%)
+['adults_audience_True', 'attendance_bucket_med_attendance'] => ['Category_Fitness'] (Conf: 82.0%, Supp: 18.0459%)
+['Category_Sport', 'children_audience_True'] => ['day_type_weekday'] (Conf: 81.8%, Supp: 22.8217%)
+['Category_Fitness', 'time_of_day_night_time'] => ['day_type_weekday'] (Conf: 81.8%, Supp: 11.8119%)
+['Category_Fitness', 'Event Type_Community Based Event'] => ['day_type_weekday'] (Conf: 81.7%, Supp: 22.8582%)
+['attendance_bucket_med_attendance', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 81.7%, Supp: 21.2906%)
+['attendance_bucket_med_attendance', 'children_audience_True', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 81.6%, Supp: 10.6453%)
+['young_adult_audience_True'] => ['day_type_weekday'] (Conf: 81.6%, Supp: 17.2439%)
+['Borough_Staten Island'] => ['Category_Fitness'] (Conf: 81.5%, Supp: 17.0616%)
+['attendance_bucket_med_attendance', 'general_public_audience_True'] => ['day_type_weekday'] (Conf: 81.5%, Supp: 12.1764%)
+['adults_audience_True', 'young_adult_audience_True'] => ['day_type_weekday'] (Conf: 81.4%, Supp: 13.5983%)
+['attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 81.4%, Supp: 46.5913%)
+['children_audience_True', 'time_of_day_morning_time'] => ['day_type_weekday'] (Conf: 81.4%, Supp: 10.2078%)
+['Event Type_Community Based Event', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 81.3%, Supp: 18.8480%)
+['time_of_day_night_time'] => ['day_type_weekday'] (Conf: 81.2%, Supp: 16.5512%)
+['teens_audience_True'] => ['day_type_weekday'] (Conf: 81.2%, Supp: 27.7798%)
+['Category_Fitness', 'adults_audience_True'] => ['day_type_weekday'] (Conf: 81.1%, Supp: 23.2592%)
+['Category_Sport', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 81.0%, Supp: 17.8272%)
+['Event Type_Community Based Event'] => ['day_type_weekday'] (Conf: 80.7%, Supp: 41.1958%)
+['Category_Sport', 'Event Type_Community Based Event', 'children_audience_True'] => ['day_type_weekday'] (Conf: 80.6%, Supp: 14.5826%)
+['Category_Fitness', 'Event Type_Community Based Event', 'children_audience_True'] => ['teens_audience_True'] (Conf: 80.5%, Supp: 10.8640%)
+['day_type_weekday', 'teens_audience_True'] => ['children_audience_True'] (Conf: 80.3%, Supp: 22.3113%)
+['teens_audience_True', 'time_of_day_afternoon_time'] => ['day_type_weekday'] (Conf: 80.2%, Supp: 13.7076%)
+['Category_Sport', 'teens_audience_True'] => ['children_audience_True'] (Conf: 80.2%, Supp: 14.2909%)
+['Event Type_Open House'] => ['Category_Fitness'] (Conf: 80.1%, Supp: 13.1972%)
+['day_type_weekday', 'teens_audience_True', 'time_of_day_afternoon_time'] => ['Event Type_Community Based Event'] (Conf: 80.1%, Supp: 10.9734%)
+['teens_audience_True', 'time_of_day_afternoon_time'] => ['children_audience_True'] (Conf: 80.0%, Supp: 13.6712%)
+['Category_Sport', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 79.9%, Supp: 18.3740%)
+['Category_Sport'] => ['day_type_weekday'] (Conf: 79.8%, Supp: 32.3733%)
+['Category_Fitness', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 79.8%, Supp: 13.0879%)
+['Category_Fitness', 'children_audience_True', 'day_type_weekday'] => ['Event Type_Community Based Event'] (Conf: 79.6%, Supp: 12.6504%)
+['Category_Fitness', 'general_public_audience_True'] => ['day_type_weekday'] (Conf: 79.5%, Supp: 12.6139%)
+['Category_Sport', 'Event Type_Community Based Event', 'day_type_weekday'] => ['children_audience_True'] (Conf: 79.5%, Supp: 14.5826%)
+['children_audience_True', 'teens_audience_True', 'time_of_day_afternoon_time'] => ['Event Type_Community Based Event'] (Conf: 79.5%, Supp: 10.8640%)
+['Category_Sport', 'Event Type_Community Based Event'] => ['day_type_weekday'] (Conf: 79.5%, Supp: 18.3376%)
+['young_adult_audience_True'] => ['adults_audience_True'] (Conf: 79.0%, Supp: 16.6970%)
+['day_type_weekday', 'young_adult_audience_True'] => ['adults_audience_True'] (Conf: 78.9%, Supp: 13.5983%)
+['Category_Sport', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance'] => ['children_audience_True'] (Conf: 78.8%, Supp: 10.1713%)
+['children_audience_True', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 78.8%, Supp: 20.9624%)
+['attendance_bucket_med_attendance', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 78.6%, Supp: 14.0357%)
+['Event Type_Open House', 'day_type_weekday'] => ['Category_Fitness'] (Conf: 78.4%, Supp: 11.8848%)
+['Category_Sport', 'Event Type_Community Based Event'] => ['children_audience_True'] (Conf: 78.4%, Supp: 18.0824%)
+['Category_Sport', 'children_audience_True', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 78.3%, Supp: 11.1921%)
+['Category_Sport', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 78.2%, Supp: 10.0984%)
+['adults_audience_True'] => ['day_type_weekday'] (Conf: 78.2%, Supp: 26.4309%)
+['general_public_audience_True'] => ['day_type_weekday'] (Conf: 78.1%, Supp: 19.6500%)
+['teens_audience_True'] => ['children_audience_True'] (Conf: 77.7%, Supp: 26.6132%)
+['day_type_weekday', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 77.6%, Supp: 21.5458%)
+['Category_Fitness', 'day_type_weekday', 'teens_audience_True'] => ['children_audience_True'] (Conf: 77.4%, Supp: 11.1192%)
+['Category_Fitness', 'adults_audience_True', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 77.4%, Supp: 13.9628%)
+['Category_Fitness', 'children_audience_True'] => ['Event Type_Community Based Event'] (Conf: 77.1%, Supp: 13.4889%)
+['Event Type_Community Based Event', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 76.3%, Supp: 21.5093%)
+['adults_audience_True', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 76.2%, Supp: 16.7700%)
+['attendance_bucket_med_attendance', 'day_type_weekday', 'teens_audience_True'] => ['children_audience_True'] (Conf: 75.8%, Supp: 10.6453%)
+['day_type_weekday', 'young_adult_audience_True'] => ['Category_Fitness'] (Conf: 75.7%, Supp: 13.0514%)
+['attendance_bucket_med_attendance', 'general_public_audience_True'] => ['Category_Fitness'] (Conf: 75.6%, Supp: 11.3015%)
+['attendance_bucket_med_attendance', 'day_type_weekday', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 75.3%, Supp: 10.5724%)
+['Category_Sport', 'teens_audience_True'] => ['day_type_weekday'] (Conf: 75.3%, Supp: 13.4160%)
+['Event Type_Local Event', 'day_type_weekday'] => ['Borough_Brooklyn'] (Conf: 75.1%, Supp: 10.5724%)
+['Category_Fitness', 'teens_audience_True'] => ['children_audience_True'] (Conf: 75.1%, Supp: 12.3223%)
+['attendance_bucket_med_attendance', 'young_adult_audience_True'] => ['Category_Fitness'] (Conf: 74.9%, Supp: 10.4265%)
+['attendance_bucket_med_attendance', 'tot_audience_True'] => ['Category_Sport'] (Conf: 74.8%, Supp: 11.0463%)
+['Category_Fitness', 'Event Type_Community Based Event', 'attendance_bucket_med_attendance'] => ['day_type_weekday'] (Conf: 74.7%, Supp: 11.4109%)
+['attendance_bucket_med_attendance', 'children_audience_True', 'tot_audience_True'] => ['Category_Sport'] (Conf: 74.7%, Supp: 10.7546%)
+['Event Type_Community Based Event', 'adults_audience_True'] => ['attendance_bucket_med_attendance'] (Conf: 74.5%, Supp: 10.4630%)
+['teens_audience_True', 'time_of_day_afternoon_time'] => ['Event Type_Community Based Event'] (Conf: 74.4%, Supp: 12.7233%)
+['Category_Sport', 'attendance_bucket_med_attendance', 'day_type_weekday'] => ['children_audience_True'] (Conf: 74.2%, Supp: 13.6347%)
+['Borough_Bronx', 'attendance_bucket_med_attendance'] => ['Category_Fitness'] (Conf: 73.9%, Supp: 12.2858%)
+['Event Type_Local Event', 'day_type_weekday'] => ['attendance_bucket_med_attendance'] (Conf: 73.6%, Supp: 10.3536%)
+['Category_Sport', 'children_audience_True', 'tot_audience_True'] => ['attendance_bucket_med_attendance'] (Conf: 73.6%, Supp: 10.7546%)
+['day_type_weekday', 'tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 73.5%, Supp: 15.3846%)
+['Event Type_Local Event'] => ['attendance_bucket_med_attendance'] (Conf: 73.3%, Supp: 11.1921%)
+['children_audience_True', 'day_type_weekday', 'tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 73.1%, Supp: 14.6555%)
+['attendance_bucket_med_attendance', 'teens_audience_True'] => ['children_audience_True'] (Conf: 73.1%, Supp: 13.0514%)
+['Borough_Bronx', 'attendance_bucket_med_attendance', 'day_type_weekday'] => ['Category_Fitness'] (Conf: 73.0%, Supp: 10.4265%)
+['tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 72.9%, Supp: 17.0616%)
+['children_audience_True', 'tot_audience_True'] => ['Event Type_Community Based Event'] (Conf: 72.7%, Supp: 16.3325%)
+['teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 72.6%, Supp: 24.8633%)
+['Event Type_Community Based Event', 'day_type_weekday', 'time_of_day_afternoon_time'] => ['children_audience_True'] (Conf: 72.5%, Supp: 13.6712%)
+['Category_Fitness', 'seniors_audience_True'] => ['adults_audience_True'] (Conf: 72.5%, Supp: 13.8534%)
+['Event Type_Community Based Event', 'adults_audience_True'] => ['day_type_weekday'] (Conf: 72.2%, Supp: 10.1349%)
+['young_adult_audience_True'] => ['Category_Fitness'] (Conf: 72.1%, Supp: 15.2388%)
+['attendance_bucket_med_attendance', 'seniors_audience_True'] => ['adults_audience_True'] (Conf: 71.6%, Supp: 11.1192%)
+['day_type_weekday', 'time_of_day_night_time'] => ['Category_Fitness'] (Conf: 71.4%, Supp: 11.8119%)
+['Borough_Bronx', 'Category_Fitness'] => ['adults_audience_True'] (Conf: 71.3%, Supp: 14.5826%)
+['Category_Sport', 'tot_audience_True'] => ['attendance_bucket_med_attendance'] (Conf: 71.3%, Supp: 11.0463%)
+['Category_Fitness', 'general_public_audience_True'] => ['attendance_bucket_med_attendance'] (Conf: 71.3%, Supp: 11.3015%)
+['Category_Sport', 'attendance_bucket_med_attendance'] => ['children_audience_True'] (Conf: 71.2%, Supp: 16.3689%)
+['time_of_day_night_time'] => ['Category_Fitness'] (Conf: 70.8%, Supp: 14.4367%)
+['Category_Sport', 'children_audience_True', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 70.7%, Supp: 10.0984%)
+['Category_Sport', 'day_type_weekday'] => ['children_audience_True'] (Conf: 70.5%, Supp: 22.8217%)
+['Category_Fitness', 'day_type_weekday', 'seniors_audience_True'] => ['adults_audience_True'] (Conf: 70.5%, Supp: 12.5410%)
+['attendance_bucket_med_attendance', 'children_audience_True'] => ['Category_Sport'] (Conf: 70.5%, Supp: 16.3689%)
+['Category_Fitness', 'children_audience_True'] => ['teens_audience_True'] (Conf: 70.4%, Supp: 12.3223%)
+['attendance_bucket_med_attendance', 'teens_audience_True'] => ['Event Type_Community Based Event'] (Conf: 70.4%, Supp: 12.5775%)
+['children_audience_True', 'day_type_weekday'] => ['Event Type_Community Based Event'] (Conf: 70.3%, Supp: 27.2330%)
+['Borough_Bronx', 'Category_Fitness', 'day_type_weekday'] => ['adults_audience_True'] (Conf: 70.2%, Supp: 12.3952%)
+['seniors_audience_True'] => ['adults_audience_True'] (Conf: 70.2%, Supp: 16.0773%)
