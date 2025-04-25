@@ -1,90 +1,176 @@
+import csv
 import sys
-import pandas as pd
 from itertools import combinations
+from collections import defaultdict
+import uuid
 
-# Parse command-line arguments
-if len(sys.argv) != 4:
-    print("Usage: python3 main.py INTEGRATED-DATASET.csv min_sup min_conf")
-    sys.exit(1)
+def load_data(filename):
+    """Load the CSV file
+       convert each row into a set of items.
+      """
+    transactions = []
+    with open(filename, 'r', encoding='utf-8') as f:
+        reader = csv.reader(f)
+        headers = next(reader)  
 
-filename = sys.argv[1]
-minsup = float(sys.argv[2])
-minconf = float(sys.argv[3])
+        for row in reader:
+            transaction = set()
+            for i, value in enumerate(row):
+                if value.strip():  
+                    item = f"{headers[i]}_{value.strip()}"
+                    transaction.add(item)
+            if transaction:  
+                transactions.append(transaction)
 
-# Load dataset
-df = pd.read_csv(filename)
+    return transactions
 
-# Generate frequent 1-itemsets
-L_list = []
-count_record_dict = {}
+def get_item_counts(transactions):
+    """
+    Count occurrences of individual items.
+    """
+    item_counts = defaultdict(int)
+    for transaction in transactions:
+        for item in transaction:
+            item_counts[item] += 1
+    return item_counts
 
-L1 = list(df.columns)
-L1_frequent = []
+def generate_candidates(prev_frequent, k):
+    """Generate candidate itemsets of size k from frequent itemsets of size k-1."""
+    candidates = set()
+    prev_frequent = [frozenset(itemset) for itemset in prev_frequent]
+    
+    for i, itemset1 in enumerate(prev_frequent):
+        for itemset2 in prev_frequent[i+1:]:
+            union = itemset1 | itemset2
+            if len(union) == k:
+                # Check if all subsets of size k-1 are frequent
+                subsets = [frozenset(c) for c in combinations(union, k-1)]
+                if all(subset in prev_frequent for subset in subsets):
+                    candidates.add(union)
+    return candidates
 
-for item in L1:
-    support = (df[item] == 1).sum() / df.shape[0]
-    if support >= minsup:
-        L1_frequent.append((item,))
-        count_record_dict[(item,)] = support
+def apriori(transactions, min_sup):
+    """
+     A-priori algorithm 
+    """
+    total_transactions = len(transactions)
+    min_sup_count = min_sup * total_transactions
+    
+    #Find frequent 1-itemsets
+    item_counts = get_item_counts(transactions)
+    frequent_itemsets = []
+    support_data = {}
+    
+    # Filter items with sufficient support
+    for item, count in item_counts.items():
+        if count >= min_sup_count:
+            frequent_itemsets.append({item})
+            support_data[frozenset([item])] = count / total_transactions
+    
 
-L_list.append(L1_frequent)
+    k = 2
+    while frequent_itemsets:
+        candidates = generate_candidates(frequent_itemsets, k)
+        candidate_counts = defaultdict(int)
+        
 
-# Generate higher-order frequent itemsets
-k = 2
-while True:
-    prev_frequents = L_list[-1]
-    candidates = []
+        for transaction in transactions:
+            transaction_set = frozenset(transaction)
+            for candidate in candidates:
+                if candidate.issubset(transaction_set):
+                    candidate_counts[candidate] += 1
+        
 
-    prev_itemsets = set(prev_frequents)
-    items = set(i for tup in prev_frequents for i in tup)
+        frequent_itemsets = []
+        for candidate, count in candidate_counts.items():
+            if count >= min_sup_count:
+                frequent_itemsets.append(set(candidate))
+                support_data[candidate] = count / total_transactions
+        
+        k += 1
+    
+    return support_data
 
-    for comb in combinations(items, k):
-        comb = tuple(sorted(comb))
-
-        all_subsets_frequent = all(
-            tuple(sorted(subset)) in prev_itemsets
-            for subset in combinations(comb, k - 1)
-        )
-
-        if not all_subsets_frequent:
+def generate_rules(frequent_itemsets, support_data, min_conf, total_transactions):
+    """
+    Generate high-confidence 
+    association rules from frequent itemsets.
+    """
+    rules = []
+    for itemset in frequent_itemsets:
+        if len(itemset) < 2:  
             continue
+        itemset = frozenset(itemset)
+        for item in itemset:
+            
+            antecedent = itemset - frozenset([item])
+            if antecedent:  
+                conf = support_data[itemset] / support_data[antecedent]
+                if conf >= min_conf:
+                    rule = {
+                        'antecedent': antecedent,
+                        'consequent': frozenset([item]),
+                        'confidence': conf,
+                        'support': support_data[itemset]
+                    }
+                    rules.append(rule)
+    return rules
 
-        support = (df[list(comb)] == 1).all(axis=1).sum() / df.shape[0]
-        if support >= minsup:
-            candidates.append(comb)
-            count_record_dict[comb] = support
+def write_output(frequent_itemsets, rules, total_transactions):
+    """
+    Write frequent itemsets 
+    and rules to output.txt in the specified format.
+    """
+    with open('output.txt', 'w', encoding='utf-8') as f:
+        f.write(f"==Frequent itemsets (min_sup={min_sup*100:.2f}%)\n")
+       
+        sorted_itemsets = sorted(
+            frequent_itemsets.items(),
+            key=lambda x: x[1],
+            reverse=True
+        )
+        for itemset, support in sorted_itemsets:
+            items = sorted(list(itemset))  
+            f.write(f"{items}, {support*100:.4f}%\n")
+        
+        f.write(f"\n==High-confidence association rules (min_conf={min_conf*100:.2f}%)\n")
+        
+        sorted_rules = sorted(
+            rules,
+            key=lambda x: (x['confidence'], x['support']),
+            reverse=True
+        )
+        for rule in sorted_rules:
+            antecedent = sorted(list(rule['antecedent']))
+            consequent = sorted(list(rule['consequent']))
+            conf = rule['confidence'] * 100
+            supp = rule['support'] * 100
+            f.write(f"{antecedent} => {consequent} (Conf: {conf:.1f}%, Supp: {supp:.4f}%)\n")
 
-    if not candidates:
-        break
-
-    L_list.append(candidates)
-    k += 1
-
-# Generate association rules
-rules = []
-for layer in L_list[1:]:
-    for itemset in layer:
-        for i in range(len(itemset)):
-            antecedent = itemset[:i] + itemset[i+1:]
-            consequent = itemset[i]
-            if not antecedent:
-                continue
-            conf = count_record_dict[itemset] / count_record_dict[antecedent]
-            if conf >= minconf:
-                rules.append((antecedent, consequent, conf, count_record_dict[itemset]))
-
-# Write output to file
-with open("example-run.txt", "w") as f:
-    f.write(f"==Frequent itemsets (min_sup={int(minsup*100)}%)\n")
-    all_frequents = [(k, v) for k, v in count_record_dict.items()]
-    all_frequents.sort(key=lambda x: -x[1])
-    for itemset, support in all_frequents:
-        items = ",".join(itemset)
-        f.write(f"[{items}], {support*100:.4f}%\n")
-
-    f.write(f"\n==High-confidence association rules (min_conf={int(minconf*100)}%)\n")
-    # sort by confidence
-    rules.sort(key=lambda x: -x[2])
-    for antecedent, consequent, conf, supp in rules:
-        antecedent_str = ",".join(antecedent)
-        f.write(f"[{antecedent_str}] => [{consequent}] (Conf: {conf*100:.1f}%, Supp: {supp*100:.4f}%)\n")
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print("Usage: python3 main.py <filename> <min_sup> <min_conf>")
+        sys.exit(1)
+    
+    filename = sys.argv[1]
+    try:
+        min_sup = float(sys.argv[2])
+        min_conf = float(sys.argv[3])
+        if not (0 <= min_sup <= 1 and 0 <= min_conf <= 1):
+            raise ValueError("min_sup and min_conf must be between 0 and 1")
+    except ValueError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
+    
+    # Load data
+    transactions = load_data(filename)
+    if not transactions:
+        print("Error: No valid transactions found in the input file")
+        sys.exit(1)
+    
+    frequent_itemsets = apriori(transactions, min_sup)
+     
+    rules = generate_rules(frequent_itemsets.keys(), frequent_itemsets, min_conf, len(transactions))
+    
+    # Write output
+    write_output(frequent_itemsets, rules, len(transactions))
