@@ -124,7 +124,7 @@ def write_output(freqs, rules, total_transactions):
     Write frequent itemsets
     and rules to output.txt in the specified format.
     """
-    with open('example-run.txt', 'w', encoding='utf-8') as f:
+    with open('output.txt', 'w', encoding='utf-8') as f:
         f.write(f"==Frequent itemsets (min_sup={min_sup * 100:.2f}%)\n")
 
         sorted_itemsets = sorted(
