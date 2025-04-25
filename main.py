@@ -4,12 +4,12 @@ from itertools import combinations
 from collections import defaultdict
 import uuid
 
-def load_data(filename):
+def load_data(file):
     """Load the CSV file
        convert each row into a set of items.
       """
-    transactions = []
-    with open(filename, 'r', encoding='utf-8') as f:
+    baskets = []
+    with open(file, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         headers = next(reader)  
 
@@ -20,16 +20,16 @@ def load_data(filename):
                     item = f"{headers[i]}_{value.strip()}"
                     transaction.add(item)
             if transaction:  
-                transactions.append(transaction)
+                baskets.append(transaction)
 
-    return transactions
+    return baskets
 
-def get_item_counts(transactions):
+def get_item_counts(baskets):
     """
     Count occurrences of individual items.
     """
     item_counts = defaultdict(int)
-    for transaction in transactions:
+    for transaction in baskets:
         for item in transaction:
             item_counts[item] += 1
     return item_counts
@@ -49,55 +49,55 @@ def generate_candidates(prev_frequent, k):
                     candidates.add(union)
     return candidates
 
-def apriori(transactions, min_sup):
+def apriori(baskets, min_sup):
     """
      A-priori algorithm 
     """
-    total_transactions = len(transactions)
+    total_transactions = len(baskets)
     min_sup_count = min_sup * total_transactions
     
     #Find frequent 1-itemsets
-    item_counts = get_item_counts(transactions)
-    frequent_itemsets = []
-    support_data = {}
+    item_counts = get_item_counts(baskets)
+    freqs = []
+    sup_dict = {}
     
     # Filter items with sufficient support
     for item, count in item_counts.items():
         if count >= min_sup_count:
-            frequent_itemsets.append({item})
-            support_data[frozenset([item])] = count / total_transactions
+            freqs.append({item})
+            sup_dict[frozenset([item])] = count / total_transactions
     
 
     k = 2
-    while frequent_itemsets:
-        candidates = generate_candidates(frequent_itemsets, k)
+    while freqs:
+        candidates = generate_candidates(freqs, k)
         candidate_counts = defaultdict(int)
         
 
-        for transaction in transactions:
+        for transaction in baskets:
             transaction_set = frozenset(transaction)
             for candidate in candidates:
                 if candidate.issubset(transaction_set):
                     candidate_counts[candidate] += 1
         
 
-        frequent_itemsets = []
+        freqs = []
         for candidate, count in candidate_counts.items():
             if count >= min_sup_count:
-                frequent_itemsets.append(set(candidate))
-                support_data[candidate] = count / total_transactions
+                freqs.append(set(candidate))
+                sup_dict[candidate] = count / total_transactions
         
         k += 1
     
-    return support_data
+    return sup_dict
 
-def generate_rules(frequent_itemsets, support_data, min_conf, total_transactions):
+def make_rules(freqs, sup_dict, min_conf, total_transactions):
     """
     Generate high-confidence 
     association rules from frequent itemsets.
     """
     rules = []
-    for itemset in frequent_itemsets:
+    for itemset in freqs:
         if len(itemset) < 2:  
             continue
         itemset = frozenset(itemset)
@@ -105,18 +105,18 @@ def generate_rules(frequent_itemsets, support_data, min_conf, total_transactions
             
             antecedent = itemset - frozenset([item])
             if antecedent:  
-                conf = support_data[itemset] / support_data[antecedent]
+                conf = sup_dict[itemset] / sup_dict[antecedent]
                 if conf >= min_conf:
                     rule = {
                         'antecedent': antecedent,
                         'consequent': frozenset([item]),
                         'confidence': conf,
-                        'support': support_data[itemset]
+                        'support': sup_dict[itemset]
                     }
                     rules.append(rule)
     return rules
 
-def write_output(frequent_itemsets, rules, total_transactions):
+def write_output(freqs, rules, total_transactions):
     """
     Write frequent itemsets 
     and rules to output.txt in the specified format.
@@ -125,7 +125,7 @@ def write_output(frequent_itemsets, rules, total_transactions):
         f.write(f"==Frequent itemsets (min_sup={min_sup*100:.2f}%)\n")
        
         sorted_itemsets = sorted(
-            frequent_itemsets.items(),
+            freqs.items(),
             key=lambda x: x[1],
             reverse=True
         )
@@ -149,10 +149,10 @@ def write_output(frequent_itemsets, rules, total_transactions):
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python3 main.py <filename> <min_sup> <min_conf>")
+        print("Usage: python3 main.py <file> <min_sup> <min_conf>")
         sys.exit(1)
     
-    filename = sys.argv[1]
+    file = sys.argv[1]
     try:
         min_sup = float(sys.argv[2])
         min_conf = float(sys.argv[3])
@@ -163,14 +163,14 @@ if __name__ == "__main__":
         sys.exit(1)
     
     # Load data
-    transactions = load_data(filename)
-    if not transactions:
+    baskets = load_data(file)
+    if not baskets:
         print("Error: No valid transactions found in the input file")
         sys.exit(1)
     
-    frequent_itemsets = apriori(transactions, min_sup)
+    freqs = apriori(baskets, min_sup)
      
-    rules = generate_rules(frequent_itemsets.keys(), frequent_itemsets, min_conf, len(transactions))
+    rules = make_rules(freqs.keys(), freqs, min_conf, len(baskets))
     
     # Write output
-    write_output(frequent_itemsets, rules, len(transactions))
+    write_output(freqs, rules, len(baskets))
